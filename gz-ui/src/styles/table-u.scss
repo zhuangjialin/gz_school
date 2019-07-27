@@ -1,0 +1,38 @@
+
+.el-table td, .el-table th {
+    height: 33px !important;
+}
+
+.el-table__body tr.current-row>td {
+    background: #8bcdff !important;
+}
+
+.expand-table .name-wrapper {
+    display: inline-block
+}
+
+.expand-table .demo-table-expand label {
+    width: 90px;
+    color: #99a9bf;
+    text-align: right;
+}
+
+.expand-table .demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0px !important;
+    //width: 50%
+}
+
+.el-table__expanded-cell {
+    padding: 6px 30px !important;
+    background-color: #fbfdff !important;
+}
+
+.el-input__suffix{
+    margin-left: -28px;
+}
+
+.el-table .cell, .el-table th>div {
+    /* padding-left: 0px; */
+    /**padding-right: 0px; */
+}

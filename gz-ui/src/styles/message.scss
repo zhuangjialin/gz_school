@@ -1,0 +1,32 @@
+
+.el-message-box__message p {
+    margin-left: 44px !important;
+}
+
+.el-message{
+    border-radius: 15px !important;
+    background-color: #f0f9eb !important;
+    border-color: #e1f3d8 !important;
+    .el-message__closeBtn {
+        top: 11px !important;
+        right: 14px !important;
+    }
+    .el-message--warning{
+        .el-message__content {
+            color: red !important;
+        }
+    }
+    .el-message--error{
+        .el-message__content {
+            color: red !important;
+        }
+    }
+    .el-message--success{
+        .el-message__content {
+            color: #67c23a !important;
+        }
+    }
+}
+
+
+
