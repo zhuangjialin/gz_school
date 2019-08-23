@@ -7,8 +7,14 @@ const _import = require('@/router/_import_' + process.env.NODE_ENV);
 
 export function filterRouter(routeConfigs) {
   	let accessedRouters = routeConfigs.filter(route => {
-	    if(route.component && route.type === 2){//类型, 1父菜单，2子菜单，3按钮
-	      	route.component = _import(route.component);
+  		//类型, 1父菜单，2子菜单，3按钮
+	    if(route.component && route.type === 2){
+	    	try{
+	    		route.component = _import(route.component);
+	    	}catch(e){
+	    		return false;
+	    	}
+	      	
 	    }else if(route.type === 1){
 		     route.component = !route.parentCode? Layout : AppMain;
 	    }
